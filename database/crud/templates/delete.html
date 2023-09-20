@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Are you sure to delete Employee {{employee.empname}}</h2><br>
+    <h4>IF NO <-- <a href="{% url 'retrieve_all' %}">RETURN BACK</a></h4><br>
+
+    <form method="post">
+        {% csrf_token %}
+        <h3>TO DELETE </h3>
+        <input type="submit" value="CONFIRM">
+    </form>
+</body>
+</html>

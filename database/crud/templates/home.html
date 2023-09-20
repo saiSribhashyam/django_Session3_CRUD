@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <H1>WELCOME TO DJANGO</H1>
+    <h2>{{name}}</h2><br><br>
+    <h1>CLICK TO ADD EMPLOYEE</h1>
+    <button><a href="{% url 'create' %}">INSERT</a></button><br><br>
+
+    <h1>VIEW ALL EMPLOYEE</h1>
+    <button><a href="{% url 'retrieve_all' %}">VIEW ALL !</a></button><br>
+
+</body>
+</html>
